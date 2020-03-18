@@ -1,0 +1,83 @@
+extends layout
+
+block content
+  section.area
+    a(href="/" class="back") 👈 back
+    header
+      h1= meta.h1
+      p= meta.desc
+    main
+      h2 💡 Case studies
+      ul.projects
+        each project in projects
+          li
+            a(href=project.url)
+              img(src=project.img)
+              div
+                h3= project.name
+                h4= project.type
+                p= project.desc
+      h2 💥 Experiments
+      ul.projects
+        each experiment in experiments
+          li
+            a(href=experiment.url)
+              img(src=experiment.img)
+              div
+                h3= experiment.name
+                h4= experiment.type
+                p= experiment.desc
+      h2 📄 Publications
+      ul.links
+        each publication in publications
+          li
+            h3
+              a(href=publication.url)= publication.title
+            h4= publication.venue
+      h2 📄 Patents
+      ul.links
+        each patent in patents
+          li
+            h3
+              a(href=patent.url)= patent.title
+            h4= patent.id
+      h2 🎤 Presentations
+      ul.links
+        each presentation in presentations
+          li
+            h3
+              a(href=presentation.url)= presentation.title
+            h4= presentation.venue
+      h2 📰 Press
+      ul.links
+        each article in press
+          li
+            h3
+              a(href=article.url)= article.title
+            h4= article.source
+    footer
+      ul.social
+        li
+          a(href="http://twitter.com/rarar") Twitter
+          span
+          |
+          |/
+          |
+        li
+          a(href="http://instagram.com/rarar") Instagram
+          span
+          |
+          |/
+          |
+        li
+          a(href="http://linkedin.com/in/rarar") LinkedIn
+      ul.personal
+        li
+          a(href="http://twitter.com/rarar") CV
+          span
+          |
+          |/
+          |
+        li
+          a(href="http://instagram.com/rarar") Email
+      p Handcrafted with love using Node.js, Express & Pug © 2020 Raphael Arar

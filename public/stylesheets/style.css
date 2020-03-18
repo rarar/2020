@@ -1,5 +1,9 @@
 body {
   font: 1rem 'PT Sans', sans-serif;
+  color: #4F4F4F;
+}
+
+h1, h3 {
   color: #333333;
 }
 
@@ -13,8 +17,200 @@ p {
   line-height: 1.5rem;
 }
 
-svg#logo {
+/* Area page */
+section.area, section.project {
+  position: relative;
+  width: calc(100% - 6rem);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a.back {
+  display: flex;
+  position: fixed;
+  top: 2rem;
+  left: 3rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #2F80ED;
+  height: 3rem;
+  width: 6rem;
+  font-size: 0.875rem;
+  align-items: center;
+  justify-content: center;
+}
+
+a.back:hover {
+  background: #2F80ED;
+  color: #ffffff;
+}
+
+section.area header, section.project header {
+  padding: 5rem 0;
+  box-shadow: 0px 1px 0px #E0E0E0;
+}
+
+section.area header h1, section.project header h1 {
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+section.area header p, section.project header p{
+  font-size: 1.3125rem;
+  line-height: 1.875rem;
+  padding: 0;
+  margin: 0;
+}
+
+section.area main, section.project main {
+  padding: 3rem 0 5rem 0;
+}
+
+section.area main h2, section.project main h2 {
+  padding: 2rem 0 0 0;
+}
+
+section.area main ul.projects, section.area main ul.links {
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+
+section.area main ul.projects a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+section.area main ul.projects a:hover{
+  opacity: 0.65;
+}
+
+
+section.area main ul.projects li {
+  list-style-type: none;
+}
+
+section.area main ul.projects li img {
+  width: 50%;
+  margin: 0 8rem 0 0;
+}
+
+section.area main ul.projects li div {
+  /* width: 50%; */
+}
+
+section.area main ul.projects li div h3{
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+section.area main ul.projects li div h4{
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 1rem 0 2rem;
+  color: #4f4f4f;
+}
+
+section.area main ul.projects li div p{
+  color: #333333;
+}
+
+
+section.area main ul.links li{
+  margin: 0;
+  padding: 2rem 0;
+  /* box-shadow: 0px 1px 0px #E0E0E0; */
+  list-style-type: none;
+}
+
+section.area main ul.links li h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  display: block;
+}
+
+
+section.area main ul.links li h4{
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+section.area footer, section.project footer {
+  width: 100%;
+  box-shadow: 0px -1px 0px #E0E0E0;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+  justify-content: flex-start;
+}
+
+section.area footer ul, section.project footer ul {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+}
+
+section.area footer ul li, section.project footer ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+section.area footer p, section.project footer p {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  width: 60%;
+}
+
+/* Project */
+section.project header {
+  box-shadow: none;
+  padding-bottom: 0;
+}
+
+section.jumbo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1rem 0;
+}
+
+section.jumbo img {
+  width: 66%;
+  margin: 0 3rem 0 0;
+}
+
+section.jumbo div {
+  box-shadow: -1px 0px 0px #E0E0E0;
+  align-self: stretch;
+  padding: 0 0 0 2rem;
+}
+
+section.project section.jumbo h2 {
+  font: 0.875rem 'PT Mono', monospace;
+  padding: 0;
+}
+
+section.jumbo ul {
   margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+section.jumbo ul li {
+  list-style-type: none;
+  padding: 0 0 0.5rem 0;
+}
+
+/* Landing */
+
+svg#logo {
+  margin: 2rem;
 }
 
 section.landing {
@@ -25,10 +221,9 @@ section.landing {
 }
 
 section.landing aside {
-  width: 30%;
+  width: 25%;
   box-shadow: 1px 0px 0px #E0E0E0;
-  height: 95vh;
-  padding: 2rem;
+  height: 100vh;
   position: relative;
   overflow: hidden !important;
 }
@@ -36,20 +231,27 @@ section.landing aside {
 section.landing aside h1 {
   font-size: 2.25rem;
   line-height: 3rem;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 2rem;
 }
 
-section.landing aside h2, section.landing main h2 {
+section.landing aside h2, section.landing main h2, section.area h2 {
   font: 0.875rem 'PT Mono', monospace;
   color: #4F4F4F;
-  margin: 0;
+}
+
+section.landing aside h2 {
+  margin: 0 0 0 2rem;
 }
 
 section.landing aside hr{
   border-top: 1px solid #4F4F4F;
   width: 25%;
   text-align: left;
-  margin: 1.15rem 0;
+  margin: 1.15rem 0 0 2rem;
+}
+
+section.landing aside p {
+  margin: 2rem;
 }
 
 section.landing aside ul.social, section.landing aside ul.personal {
@@ -57,6 +259,9 @@ section.landing aside ul.social, section.landing aside ul.personal {
   padding: 0;
   position: absolute;
   bottom: 2rem;
+}
+section.landing aside ul.social {
+  left: 2rem;
 }
 
 section.landing aside ul.personal {
@@ -69,7 +274,7 @@ section.landing aside ul.social li, section.landing aside ul.personal li{
 }
 
 section.landing main {
-  width: 70%;
+  width: 75%;
   height: 100vh;
   overflow: scroll;
 }
@@ -112,4 +317,11 @@ section.landing main ul li a:hover {
 
 section.landing main ul li:first-child a {
   box-shadow: 0px -1px 0px #E0E0E0, 0px 1px 0px #E0E0E0;
+}
+
+section.landing main footer p {
+  font-size: 0.875rem;
+  line-height: 0.8rem;
+  color: #828282;
+  padding: .844rem 2rem;
 }
