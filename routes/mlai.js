@@ -150,7 +150,7 @@ const mlaiexperiments = [
 router.get('/cbm', function(req, res, next) {
   res.locals.h1 = "CBM.next";
   res.locals.desc = "This internal IBM product helped experienced strategy and transformation consultants model and visualize their clients’ organizational structures in effort to help them restructure and optimize their enterprises.";
-  res.locals.largethumb = "/images/CBM-large.png";
+  res.locals.largethumb = "/images/cbm-large.png";
   res.locals.title = 'Raphael Arar';
   res.render('project');
 });

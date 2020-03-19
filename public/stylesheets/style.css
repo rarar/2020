@@ -178,18 +178,45 @@ section.jumbo {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 1rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 section.jumbo img {
   width: 66%;
   margin: 0 3rem 0 0;
+  align-self: flex-start;
 }
 
 section.jumbo div {
   box-shadow: -1px 0px 0px #E0E0E0;
   align-self: stretch;
   padding: 0 0 0 2rem;
+}
+
+section.jumob div.detail {
+  width: 20%;
+}
+
+section.jumbo div.detail p{
+  color: #4F4F4F;
+  font-size: 0.875rem;
+}
+
+section.jumbo div.img-container {
+  background: #F2F2F2;
+  padding: 3rem;
+  box-shadow: none;
+  margin: 0 3rem 0 0;
+  align-self: flex-start;
+  width: 80%;
+}
+
+section.jumbo div.detail {
+  width: 40%;
+}
+
+section.jumbo div.img-container img {
+  width: 100%;
 }
 
 section.project section.jumbo h2 {
@@ -207,6 +234,38 @@ section.jumbo ul li {
   padding: 0 0 0.5rem 0;
 }
 
+section.project article h3 {
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 3rem 0 1rem 0;
+}
+
+section.project article p {
+  margin: 0;
+  padding: 1rem 0;
+  color: #333333;
+}
+
+section.project section.image-block {
+  margin: 2rem 0;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+}
+
+section.project section.image-block figure {
+  align-self: stretch;
+}
+
+section.project section.image-block figure img {
+  width: 100%;
+}
+
+section.project section.image-block figure figcaption {
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+}
 /* Landing */
 
 svg#logo {
