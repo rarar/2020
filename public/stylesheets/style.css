@@ -304,7 +304,7 @@ section.landing aside h2 {
 
 section.landing aside hr{
   border-top: 1px solid #4F4F4F;
-  width: 25%;
+  width: 15.75rem;
   text-align: left;
   margin: 1.15rem 0 0 2rem;
 }
@@ -383,4 +383,67 @@ section.landing main footer p {
   line-height: 0.8rem;
   color: #828282;
   padding: .844rem 2rem;
+}
+
+@media (max-width: 1440px) {
+    section.landing aside {
+        width:35%
+    }
+
+    section.landing main {
+      width: 75%;
+    }
+}
+
+@media (max-width: 1280px) {
+  section.landing aside {
+      width:40%
+  }
+
+  section.landing main {
+    width: 60%;
+  }
+
+  section.landing main ul.main-work li a {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  section.landing main ul.other-work li a {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  section.landing aside ul.social, section.landing aside ul.personal {
+    font-size: 0.875rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  section.landing {
+    flex-direction: column;
+  }
+
+  section.landing aside {
+    height: auto;
+    align-self: stretch;
+    width: auto;
+    box-shadow: 0px 1px 0px #E0E0E0;
+  }
+
+  section.landing aside ul.social, section.landing aside ul.personal {
+    position: static;
+    display: inline-block;
+    padding: 0 0 2rem 2rem;
+  }
+
+  section.landing main {
+    height: auto;
+    align-self: stretch;
+    width: auto;
+  }
+
+
 }
