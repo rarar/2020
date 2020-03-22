@@ -37,6 +37,7 @@ a.back {
   font-size: 0.875rem;
   align-items: center;
   justify-content: center;
+  z-index: 100;
 }
 
 a.back:hover {
@@ -385,13 +386,17 @@ section.landing main footer p {
   padding: .844rem 2rem;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1680px) {
     section.landing aside {
         width:35%
     }
 
     section.landing main {
       width: 75%;
+    }
+
+    section.area {
+      padding: 3rem 0 0 0;
     }
 }
 
@@ -417,9 +422,97 @@ section.landing main footer p {
   section.landing aside ul.social, section.landing aside ul.personal {
     font-size: 0.875rem;
   }
+
+  section.area main ul.projects li img {
+    margin-right: 3rem;
+    width: 50%;
+  }
+
+  section.area footer ul, section.project footer ul {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    display: inline-block;
+  }
+
+  section.area footer p, section.project footer p {
+    font-size: 0.875rem;
+  }
+
 }
 
+@media (max-width: 1024px) {
+  section.area main ul.projects a {
+    flex-direction: column;
+  }
 
+  section.area main ul.projects li img {
+    margin: 0 0 2rem 0;
+    width: 100%;
+  }
+
+  section.area footer, section.project footer {
+    display: block;
+  }
+
+  section.area footer ul, section.project footer ul {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    display: inline-block;
+  }
+
+  section.area footer ul.personal, section.project footer ul.personal {
+    text-align: right;
+  }
+
+  section.area footer p, section.project footer p {
+    margin: 0;
+    padding: 1rem 0 0 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  section.jumbo {
+    flex-direction: column;
+  }
+
+  section.jumbo div {
+    width: 100%;
+    box-shadow: none;
+    padding: 1rem 0;
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  section.jumbo div.img-container {
+    margin: 0;
+    align-self: stretch;
+    width: auto;
+  }
+
+  section.jumbo div h2, section.jumbo div ul {
+    font-size: 0.875rem;
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+
+  section.jumbo div.detail {
+    width: calc(100% - 2rem);
+    box-shadow: -1px 0px 0px #E0E0E0;
+    margin: 2rem 0;
+    padding: 0 0 0 2rem;
+  }
+
+  section.jumbo div.detail p {
+    padding: 0.5rem 0;
+  }
+
+  section.project section.image-block {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+}
 
 @media (max-width: 768px) {
   section.landing {
@@ -445,5 +538,11 @@ section.landing main footer p {
     width: auto;
   }
 
+  section.project, section.area {
+    width: calc(100% - 4rem);
+  }
 
+  a.back {
+    left: 2rem;
+  }
 }
