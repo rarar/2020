@@ -38,4 +38,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.listen(9999, () => {
+  console.log('yahoo! portfolio app running on localhost:9999');
+});
+
 module.exports = app;
