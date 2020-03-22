@@ -381,7 +381,6 @@ section.landing main ul li:first-child a {
 
 section.landing main footer p {
   font-size: 0.875rem;
-  line-height: 0.8rem;
   color: #828282;
   padding: .844rem 2rem;
 }
@@ -456,14 +455,14 @@ section.landing main footer p {
   }
 
   section.area footer ul, section.project footer ul {
-    margin: 0;
+    margin: 0 0 1rem 0;
     padding: 0;
-    width: 50%;
-    display: inline-block;
+    width: auto;
+    display: block;
   }
 
   section.area footer ul.personal, section.project footer ul.personal {
-    text-align: right;
+    text-align: left;
   }
 
   section.area footer p, section.project footer p {
@@ -545,4 +544,13 @@ section.landing main footer p {
   a.back {
     left: 2rem;
   }
+
+  section.area header h1, section.project header h1 {
+    font-size: 3.5rem;
+  }
+
+  section.area main ul.projects li div h3 {
+      font-size: 2.5rem;
+  }
+
 }
