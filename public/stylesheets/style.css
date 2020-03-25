@@ -541,6 +541,17 @@ section.landing main footer p {
     width: calc(100% - 4rem);
   }
 
+  figure {
+    margin: 0;
+  }
+
+  section.jumbo div.img-container, figure {
+    padding: 0.5rem;
+  }
+  section.jumbo img {
+    margin: 0;
+  }
+
   a.back {
     left: 2rem;
   }
