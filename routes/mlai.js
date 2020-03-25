@@ -147,6 +147,14 @@ const mlaiexperiments = [
 
 
 
+router.get('/cbm', function(req, res, next) {
+  res.locals.h1 = "CBM.next";
+  res.locals.desc = "This internal IBM product helped experienced strategy and transformation consultants model and visualize their clients’ organizational structures in effort to help them restructure and optimize their enterprises.";
+  res.locals.largethumb = "/images/CBM-large.png";
+  res.locals.deets = "<h2>❤️ Users</h2><ul><li>Experienced IBM Strategy & Transformation Consultants</li></ul><h2>🏢 Employer</h2><ul><li>IBM Research / IBM Services</li><ul><h2>💼 Role</h2><ul><li>Product Design Lead</li></ul><h2>👥 Team</h2><ul><li>1 Design Technologist </li><li>5 Software Engineers</li><li>1 Product Manager </li><li>2 Data Scientists</li></ul><h2>✅ Responsibilities</h2><ul><li>Product design including user research, interaction design, visual design and prototyping</li><li>Design Thinking workshop facilitation</li><li>Client management</li><li>Strategy & leadership</li></ul>";
+  res.locals.title = 'Raphael Arar';
+  res.render('project');
+});
 
 
 router.get('/', function(req, res, next) {
