@@ -55,7 +55,7 @@ section.area header h1, section.project header h1 {
   font-size: 4rem;
 }
 
-section.area header p, section.project header p{
+section.area header p, section.project header p {
   font-size: 1.3125rem;
   line-height: 1.875rem;
   padding: 0;
@@ -75,17 +75,16 @@ section.area main ul.projects, section.area main ul.links {
   padding: 0 0 1rem 0;
 }
 
-section.area main ul.projects a{
+section.area main ul.projects a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
 }
 
-section.area main ul.projects a:hover{
+section.area main ul.projects a:hover {
   opacity: 0.65;
 }
-
 
 section.area main ul.projects li {
   list-style-type: none;
@@ -100,25 +99,24 @@ section.area main ul.projects li div {
   /* width: 50%; */
 }
 
-section.area main ul.projects li div h3{
+section.area main ul.projects li div h3 {
   font-size: 3rem;
   font-weight: 400;
   margin: 0;
 }
 
-section.area main ul.projects li div h4{
+section.area main ul.projects li div h4 {
   font-size: 0.875rem;
   font-weight: 400;
   margin: 1rem 0 2rem;
   color: #4f4f4f;
 }
 
-section.area main ul.projects li div p{
+section.area main ul.projects li div p {
   color: #333333;
 }
 
-
-section.area main ul.links li{
+section.area main ul.links li {
   margin: 0;
   padding: 2rem 0;
   /* box-shadow: 0px 1px 0px #E0E0E0; */
@@ -133,8 +131,7 @@ section.area main ul.links li h3 {
   display: block;
 }
 
-
-section.area main ul.links li h4{
+section.area main ul.links li h4 {
   font-weight: 400;
   font-size: 1rem;
   margin: 0;
@@ -194,11 +191,11 @@ section.jumbo div {
   padding: 0 0 0 2rem;
 }
 
-section.jumob div.detail {
+section.jumbo div.detail {
   width: 20%;
 }
 
-section.jumbo div.detail p{
+section.jumbo div.detail p {
   color: #4F4F4F;
   font-size: 0.875rem;
 }
@@ -210,6 +207,18 @@ section.jumbo div.img-container {
   margin: 0 3rem 0 0;
   align-self: flex-start;
   width: 80%;
+}
+
+section.jumbo div.video-wrapper {
+  width: 80%;
+  align-self: flex-start;
+  position: relative;
+  box-shadow: none;
+  padding: 0 3rem 0 0;
+}
+
+section.jumbo div.video-wrapper div {
+  box-shadow: none;
 }
 
 section.jumbo div.detail {
@@ -267,8 +276,8 @@ section.project section.image-block figure figcaption {
   font-size: 0.875rem;
   padding: 0.5rem 0;
 }
-/* Landing */
 
+/* Landing */
 svg#logo {
   margin: 2rem;
 }
@@ -303,7 +312,7 @@ section.landing aside h2 {
   margin: 0 0 0 2rem;
 }
 
-section.landing aside hr{
+section.landing aside hr {
   border-top: 1px solid #4F4F4F;
   width: 15.75rem;
   text-align: left;
@@ -320,6 +329,7 @@ section.landing aside ul.social, section.landing aside ul.personal {
   position: absolute;
   bottom: 2rem;
 }
+
 section.landing aside ul.social {
   left: 2rem;
 }
@@ -328,7 +338,7 @@ section.landing aside ul.personal {
   right: 2rem;
 }
 
-section.landing aside ul.social li, section.landing aside ul.personal li{
+section.landing aside ul.social li, section.landing aside ul.personal li {
   display: inline;
   list-style: none;
 }
@@ -386,22 +396,22 @@ section.landing main footer p {
 }
 
 @media (max-width: 1680px) {
-    section.landing aside {
-        width:35%
-    }
+  section.landing aside {
+    width: 35%
+  }
 
-    section.landing main {
-      width: 75%;
-    }
+  section.landing main {
+    width: 75%;
+  }
 
-    section.area {
-      padding: 3rem 0 0 0;
-    }
+  section.area {
+    padding: 3rem 0 0 0;
+  }
 }
 
 @media (max-width: 1280px) {
   section.landing aside {
-      width:40%
+    width: 40%
   }
 
   section.landing main {
@@ -437,7 +447,6 @@ section.landing main footer p {
   section.area footer p, section.project footer p {
     font-size: 0.875rem;
   }
-
 }
 
 @media (max-width: 1024px) {
@@ -548,6 +557,7 @@ section.landing main footer p {
   section.jumbo div.img-container, figure {
     padding: 0.5rem;
   }
+
   section.jumbo img {
     margin: 0;
   }
@@ -561,7 +571,6 @@ section.landing main footer p {
   }
 
   section.area main ul.projects li div h3 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
-
 }

@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  section.project
+    a(href="./" class="back") 👈 back
+    header
+      h1= h1
+      p= desc
+    main
+      if largethumb && deets
+        section.jumbo
+          div.img-container
+            img(src=largethumb)
+          div!= deets
+      if videothumb && deets
+        section.jumbo
+          div.video-wrapper
+            != videothumb
+          div!= deets
+        article
+          if concept
+            h3 Concept
+            != concept
+    footer
+      ul.social
+        li
+          a(href="http://twitter.com/rarar") Twitter
+          span
+          |
+          |/
+          |
+        li
+          a(href="http://instagram.com/rarar") Instagram
+          span
+          |
+          |/
+          |
+        li
+          a(href="http://linkedin.com/in/rarar") LinkedIn
+      ul.personal
+        li
+          a(href="http://twitter.com/rarar") CV
+          span
+          |
+          |/
+          |
+        li
+          a(href="http://instagram.com/rarar") Email
+      p Handcrafted with love using Node.js, Express & Pug © 2020 Raphael Arar
