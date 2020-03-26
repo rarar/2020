@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var mlaiRouter = require('./routes/mlai');
 var kaRouter = require('./routes/ka');
+var artRouter = require('./routes/art');
 
 var app = express();
 
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/ml-ai', mlaiRouter);
 app.use('/ka', kaRouter);
+app.use('/art', artRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

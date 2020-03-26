@@ -7,17 +7,24 @@ block content
       h1= h1
       p= desc
     main
-      section.jumbo
-        div.img-container
-          img(src=largethumb)
-        div!= deets
-      article
-        h3 The problem
-        != problemStatement
-        h3 Process & solution
-        != processSolution
-        h3 Outcome & next steps
-        != outcomeNextSteps
+      if largethumb && deets
+        section.jumbo
+          div.img-container
+            img(src=largethumb)
+          div!= deets
+        article
+          if problemStatement
+              h3 The problem
+              != problemStatement
+          if processSolution
+            h3 Process & solution
+            != processSolution
+          if outcomeNextSteps
+            h3 Outcome & next steps
+            != outcomeNextSteps
+          if concept
+            h3 Concept
+            != concept
     footer
       ul.social
         li
