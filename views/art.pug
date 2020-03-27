@@ -9,9 +9,9 @@ block content
     main
       if largethumb && deets
         section.jumbo
-          div.img-container
+          div.img-container.full
             img(src=largethumb)
-          div!= deets
+          div.detail.no-border!= deets
       if videothumb && deets
         section.jumbo
           div.video-wrapper

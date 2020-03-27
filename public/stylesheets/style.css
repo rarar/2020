@@ -205,12 +205,20 @@ section.jumbo div.img-container {
   width: 80%;
 }
 
-section.jumbo div.video-wrapper {
+/* section.jumbo div.img-container.full {
+  background: none;
+  width: 60%;
+  margin: 0;
+} */
+
+section.jumbo div.video-wrapper, section.jumbo div.img-container.full {
   width: 80%;
   align-self: flex-start;
   position: relative;
   box-shadow: none;
   padding: 0 3rem 0 0;
+  background: none;
+  margin: 0;
 }
 
 section.jumbo div.video-wrapper div {
@@ -489,10 +497,11 @@ section.landing main footer p {
     align-self: flex-start;
   }
 
-  section.jumbo div.img-container, section.jumbo div.video-wrapper {
+  section.jumbo div.img-container, section.jumbo div.video-wrapper, section.jumbo div.img-container.full {
     margin: 0;
     align-self: stretch;
     width: auto;
+    padding: 0;
   }
 
   section.jumbo div.detail.no-border {
