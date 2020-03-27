@@ -2,7 +2,7 @@ extends layout
 
 block content
   section.project
-    a(href="./" class="back") 👈 back
+    a(href="/" class="back") 👈 back
     header
       h1= h1
       p= desc
@@ -16,11 +16,13 @@ block content
         section.jumbo
           div.video-wrapper
             != videothumb
-          div!= deets
+          div.detail.no-border!= deets
         article
           if concept
             h3 Concept
             != concept
+          if content
+            != content
     footer
       ul.social
         li

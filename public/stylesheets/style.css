@@ -191,10 +191,6 @@ section.jumbo div {
   padding: 0 0 0 2rem;
 }
 
-section.jumbo div.detail {
-  width: 20%;
-}
-
 section.jumbo div.detail p {
   color: #4F4F4F;
   font-size: 0.875rem;
@@ -493,10 +489,19 @@ section.landing main footer p {
     align-self: flex-start;
   }
 
-  section.jumbo div.img-container {
+  section.jumbo div.img-container, section.jumbo div.video-wrapper {
     margin: 0;
     align-self: stretch;
     width: auto;
+  }
+
+  section.jumbo div.detail.no-border {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  section.jumbo div.video-wrapper {
+    padding: 0;
   }
 
   section.jumbo div h2, section.jumbo div ul {
