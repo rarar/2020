@@ -24,4 +24,15 @@ router.get('/gemini-heart', function(req, res, next) {
   res.render('art');
 });
 
+router.get('/echo-echo-bot', function(req, res, next) {
+  res.locals.h1 = "Echo echo bot";
+  res.locals.desc = "How does an echo manifest itself in the digital space? This piece explores the evolution of an echo as we meander the analog/digital divide.";
+  res.locals.largethumb = "/images/echoechobot-thumb.jpg";
+  res.locals.deets = "<h2>⚒️️ Medium</h2><ul><li>text, software, projectors, electronics, sound</li></ul><h2>🕒 Year</h2><ul><li>2013–Present</li></ul><h2>🏛 Venues</h2><ul><li>Machine Inspired Art (MIA) Gallery - Los Angeles, California</li><li>Calarts - Valencia, California</li></ul>";
+  res.locals.concept = "<p>The growing prevalence of text-based communication permeates our lives and is now one of our primary forms of interaction. In these situations, the technology appears to be concealed and unidirectional. Echo Echo Bot exposes the ramifications of interfacing with computation; the system responds, mangles and distorts. Computational interaction is a process with many layers now made aware to the participant with a simple line of text. Type what you’d like the world to experience in your loudest digital voice and watch/hear the permutations, reverberations and digital echoes unfold through a twitter bot, text message, web server and a conglomeration of digital noise.</p><p><a href='https://twitter.com/echoechobot'>Follow Echo echo bot on Twitter</a></p><p><a href='https://echo.rarar.com'>View the submitted echoes</a></p>";
+  res.locals.content = '<section class="jumbo"><div class="img-container full"><img src="/images/echoechobot-sound-wave.jpg" /></div><div class="detail"><p>Audio visualiation of the echoes sonified</p></div></section><section class="jumbo"><div class="img-container full"><img src="/images/echoechobot-text.png" /></div><div class="detail"><p>Stream of jumbled text messages during the Downtown LA Art Walk</p></div></section>';
+  res.locals.title = 'Raphael Arar';
+  res.render('art');
+});
+
 module.exports = router;
