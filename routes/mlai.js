@@ -134,14 +134,14 @@ const mlaiexperiments = [
     type: "Art Research",
     url: "/ml-ai/wayfinding",
     desc: "Can computers learn to be intuitive? This art installation served as an aesthetic experiment in the direct translation of computational intuition to the physical space.",
-    img: "/images/placeholder.png"
+    img: "/images/wayfinding-main.png"
   },
   {
     name: "(+/-) Pendulum",
     type: "Art Research",
     url: "/ml-ai/pendulum",
     desc: "What does location mean in the information age? Using the mechanics of the Foucault Pendulum, this installation explores the physical and digital concepts of location.",
-    img: "/images/placeholder.png"
+    img: "/images/pendulum-main.png"
   }
 ];
 

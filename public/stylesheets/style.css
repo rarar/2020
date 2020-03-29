@@ -280,6 +280,15 @@ section.project section.image-block figure figcaption {
   font-size: 0.875rem;
   padding: 0.5rem 0;
 }
+section.references ul {
+  margin: 0;
+  padding: 0;
+}
+
+section.references ul li {
+  list-style: none;
+  padding: 1rem 0;
+}
 
 /* Landing */
 svg#logo {

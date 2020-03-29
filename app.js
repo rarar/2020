@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var mlaiRouter = require('./routes/mlai');
 var kaRouter = require('./routes/ka');
 var artRouter = require('./routes/art');
+var ethicsRouter = require('./routes/ai-ethics');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/ml-ai', mlaiRouter);
 app.use('/ka', kaRouter);
 app.use('/art', artRouter);
+app.use('/ai-ethics', ethicsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
