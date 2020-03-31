@@ -110,7 +110,7 @@ const mlaiprojects = [
     type: "Product Design",
     url: "/ml-ai/cbm",
     desc: "This internal IBM product helped experienced strategy and transformation consultants model and visualize their clients’ organizational structures in effort to help them restructure and optimize their enterprises.",
-    img: "/images/placeholder.png"
+    img: "/images/cbm-main.png"
   },
   {
     name: "IBM Travel Manager",
