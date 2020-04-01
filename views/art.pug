@@ -12,6 +12,11 @@ block content
           div.img-container.full
             img(src=largethumb)
           div.detail.no-border!= deets
+      if largethumbnofull && deets
+        section.jumbo
+          div.img-container
+            img(src=largethumbnofull)
+          div.detail.no-border!= deets
       if videothumb && deets
         section.jumbo
           div.video-wrapper
