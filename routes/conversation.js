@@ -10,17 +10,37 @@ const conversationmeta = {
 
 const conversationpresentations = [
   {
-    title: "5 things designers can learn from classrooms",
-    venue: "Layers 2019",
-    url: "#"
+    title: "Applying Science to Conversational UX Design",
+    venue: "SXSW 2017",
+    url: "https://www.slideshare.net/RaphaelArar/applying-science-to-conversational-ux-design"
+  },
+  {
+    title: "Cultivating Cognitive Experiences",
+    venue: "LAUNCH Festival 2017",
+    url: "https://www.slideshare.net/RaphaelArar/cultivating-cognitive-experiences"
   }
 ];
 
 const conversationpress = [
   {
-    title: "Conversation Guidelines",
-    source: "IBM Design for AI",
-    url: "https://www.ibm.com/design/ai/conversation/"
+    title: "At IBM, Researchers Are Working To Make Robots Engaging Conversationalists",
+    source: "Inc. Magazine",
+    url: "https://www.inc.com/greg-satell/at-ibm-researchers-are-working-to-make-robots-engaging-conversationalists.html?cid=sf01001"
+  },
+  {
+    title: "Conversational UX design: What it is and who's paving the way",
+    source: "TechTarget",
+    url: "https://searchcio.techtarget.com/feature/Conversational-UX-design-What-it-is-and-whos-paving-the-way"
+  },
+  {
+    title: "How to make AI agents better conversationalists: Context is key",
+    source: "TechTarget",
+    url: "https://searchcio.techtarget.com/feature/How-to-make-AI-agents-better-conversationalists-Context-is-key"
+  },
+  {
+    title: "Tackling the 'ask me anything' challenge of a conversational interface",
+    source: "TechTarget",
+    url: "https://searchcio.techtarget.com/feature/Tackling-the-ask-me-anything-challenge-of-a-conversational-interface"
   }
 ];
 
@@ -77,8 +97,8 @@ router.get('/map', function(req, res, next) {
 
 
 router.get('/', function(req, res, next) {
-  res.locals.press = "";
-  res.locals.presentations = "";
+  res.locals.press = conversationpress;
+  res.locals.presentations = conversationpresentations;
   res.locals.patents = "";
   res.locals.publications = conversationpublications;
   res.locals.experiments = conversationexperiments;
