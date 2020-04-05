@@ -74,7 +74,7 @@ const conversationprojects = [
     type: "Prototype",
     url: "/conversation/travel-concierge",
     desc: "A prototype exploring the next era of travel shopping through the combination of a traditional online experience and a conversational agent.",
-    img: "/images/placeholder.png"
+    img: "/images/wta-main.png"
   }
 ];
 
@@ -88,7 +88,17 @@ const conversationexperiments = [
   }
 ];
 
-
+router.get('/travel-concierge', function(req, res, next) {
+  res.locals.h1 = "IBM Travel Concierge";
+  res.locals.desc = "A prototype exploring the next era of travel shopping through the combination of a traditional online experience and a conversational agent.";
+  res.locals.largethumb = "/images/wta-thumb.png";
+  res.locals.deets = "<h2>❤️ Users</h2><ul><li>Anyone booking flights online</li></ul><h2>🏢 Employer</h2><ul><li>IBM Research</li></ul><h2>💼 Role</h2><ul><li>User Experience Design Lead / Conversation Designer</li></ul><h2>👥 Team</h2><ul><li>1 Sociologist</li><li>3 Software Engineers</li><li>1 Product Manager</li><li>1 Data Scientists</li></ul><h2>✅ Responsibilities</h2><ul><li>User experience design</li><li>Design Thinking workshop facilitation</li><li>Client management</li><li>Strategy & leadership</li></ul>";
+  res.locals.problemStatement = "<p>In early 2016, my team and I met with a number of different airlines to understand challenges they faced in maintaining business and being of better service to their customers. Many of them who were more consumer-facing felt that they were in danger of becoming irrelevant due to the amount of disruption that’s occurred in the travel business. Throughout these meetings, a common theme emerged: in the age of the automated travel agent, how do we inspire our users to visit a destination they had never seen before?</p><p>User research revealed that their customers wanted better recommendations and that they actually missed the ease of working with travel agents. We knew that in order to meet these needs in an increasingly AI-driven landscape, a solution had to be first and foremost personalized to every user, easy to understand and ultimately human-like in its experience—just like working with a travel agent.</p>";
+  res.locals.processSolution = "";
+  res.locals.outcomeNextSteps = "";
+  res.locals.title = 'Raphael Arar';
+  res.render('project');
+});
 
 router.get('/bot2bot', function(req, res, next) {
   res.locals.h1 = "bot2bot";
