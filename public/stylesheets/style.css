@@ -196,37 +196,32 @@ section.jumbo div.detail p {
   font-size: 0.875rem;
 }
 
-section.jumbo div.img-container {
+section.jumbo div.img-container{
   background: #F2F2F2;
   padding: 3rem;
   box-shadow: none;
   margin: 0 3rem 0 0;
   align-self: flex-start;
-  width: 80%;
+  position: relative;
+  width: calc(70% - 6rem);
 }
 
-/* section.jumbo div.img-container.full {
-  background: none;
-  width: 60%;
-  margin: 0;
-} */
-
 section.jumbo div.video-wrapper, section.jumbo div.img-container.full {
-  width: 80%;
   align-self: flex-start;
+  width: 70%;
   position: relative;
   box-shadow: none;
-  padding: 0 3rem 0 0;
   background: none;
-  margin: 0;
+  margin: 0 3rem 0 0;
+  padding: 0;
+}
+
+section.jumbo div.detail {
+  width: 30%;
 }
 
 section.jumbo div.video-wrapper div {
   box-shadow: none;
-}
-
-section.jumbo div.detail {
-  width: 40%;
 }
 
 section.jumbo div.img-container img {
