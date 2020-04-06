@@ -267,6 +267,10 @@ section.project section.image-block figure {
   align-self: stretch;
 }
 
+section.project section.image-block figure.lg {
+  width: 75%;
+}
+
 section.project section.image-block figure img {
   width: 100%;
 }
