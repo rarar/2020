@@ -279,6 +279,20 @@ section.project section.image-block figure figcaption {
   font-size: 0.875rem;
   padding: 0.5rem 0;
 }
+
+section.project .inner-content {
+  margin: 0;
+}
+
+section.project .inner-content li {
+  padding: .5rem 0;
+}
+
+section.project h4 {
+  font-weight: 400;
+  font-size: 1.75rem;
+  margin: 1.5rem 0 1rem 0;
+}
 section.references ul {
   margin: 0;
   padding: 0;
