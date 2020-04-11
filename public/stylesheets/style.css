@@ -185,7 +185,25 @@ section.jumbo img {
   align-self: flex-start;
 }
 
-section.jumbo div {
+section.project blockquote {
+  padding: 1rem 0;
+  margin: 1rem 2rem 2rem 2rem;
+}
+
+section.project blockquote footer {
+  padding: 1rem 0;
+}
+
+section.project blockquote, section.project blockquote footer {
+  border: none;
+  padding: none;
+  box-shadow: none;
+  font-style: italic;
+  font-size: 1rem;
+  color: #4F4F4F;
+}
+
+section.jumbo div, section.project blockquote {
   box-shadow: -1px 0px 0px #E0E0E0;
   align-self: stretch;
   padding: 0 0 0 2rem;
