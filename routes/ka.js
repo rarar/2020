@@ -12,7 +12,7 @@ const kapresentations = [
   {
     title: "5 things designers can learn from classrooms",
     venue: "Layers 2019",
-    url: "#"
+    url: "https://2019.layers.is"
   }
 ];
 
