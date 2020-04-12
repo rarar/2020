@@ -2,7 +2,10 @@ extends layout
 
 block content
   section.project
-    a(href="./" class="back") 👈 back
+    if goToIndex
+      a(href="/" class="back") 👈 back
+    else
+      a(href="./" class="back") 👈 back
     header
       h1= h1
       p= desc
