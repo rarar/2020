@@ -82,7 +82,7 @@ section.area main ul.projects a {
   padding: 2rem 0;
 }
 
-section.area main ul.projects a:hover {
+section.area main ul.projects a:hover, section.landing aside a:hover {
   opacity: 0.65;
 }
 

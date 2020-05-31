@@ -8,7 +8,7 @@ block content
       p= meta.desc
     main
       if projects
-        h2 💡 Case studies
+        h2 Case studies 💡
         ul.projects
           each project in projects
             li
@@ -19,7 +19,7 @@ block content
                   h4= project.type
                   p= project.desc
       if experiments
-        h2 💥 Experiments
+        h2 Experiments 💥
         ul.projects
           each experiment in experiments
             li
@@ -30,7 +30,7 @@ block content
                   h4= experiment.type
                   p= experiment.desc
       if publications
-        h2 📄 Publications
+        h2 Publications 📄
         ul.links
           each publication in publications
             li
@@ -38,7 +38,7 @@ block content
                 a(href=publication.url)= publication.title
               h4= publication.venue
       if patents
-        h2 📄 Patents
+        h2 Patents 📄
         ul.links
           each patent in patents
             li
@@ -46,7 +46,7 @@ block content
                 a(href=patent.url)= patent.title
               h4= patent.id
       if presentations
-        h2 🎤 Presentations
+        h2 Presentations 🎤
         ul.links
           each presentation in presentations
             li
@@ -54,7 +54,7 @@ block content
                 a(href=presentation.url)= presentation.title
               h4= presentation.venue
       if press
-        h2 📰 Press
+        h2 Press 📰 
         ul.links
           each article in press
             li
