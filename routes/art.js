@@ -65,7 +65,7 @@ router.get('/forbidden-pixel', function(req, res, next) {
 router.get('/projected-shadows', function(req, res, next) {
   res.locals.h1 = "Projected Shadows";
   res.locals.desc = "An archival video piece exploring the architectural details of the Gamble House.";
-  res.locals.largethumb = "/images/forbidden-pixel-thumb.jpg";
+  res.locals.largethumb = "/images/projected-shadows-thumb.jpg";
   res.locals.deets = "<h2>Medium ⚒️️</h2><ul><li>digital video</li></ul><h2>Year 🕒</h2><ul><li>2014</li></ul><h2>Venues 🏛</h2><ul><li>Gamble House Museum - Pasadena, California</li></ul>";
   res.locals.concept = "<p>As part of the Machine Project Guide to the Gamble House, Projected Shadows was an architectural projection-mapping piece that explored the craftsmanship and fine woodworking of the Gamble House. The work explored the intersection of maker culture and contemporary art through an inside-out view of the house along with its strong Eastern Asian motifs.</p>";
   res.locals.content = '<section class="jumbo"><div class="video-wrapper full"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/107896316?loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div><div class="detail"><p>Video footage of the projection-mapping event</p></div></section>';
