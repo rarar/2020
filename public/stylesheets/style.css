@@ -249,6 +249,7 @@ section.jumbo div.img-container img {
 section.project section.jumbo h2 {
   font: 0.875rem 'PT Mono', monospace;
   padding: 0;
+  color: #828282;
 }
 
 section.jumbo ul {
@@ -259,6 +260,7 @@ section.jumbo ul {
 section.jumbo ul li {
   list-style-type: none;
   padding: 0 0 0.5rem 0;
+  color: #333333;
 }
 
 section.project article h3 {
