@@ -185,6 +185,11 @@ section.jumbo img {
   align-self: flex-start;
 }
 
+/* section.project article p, section.project article h3, section.project article h4, section.project article ul, section.project article ul li, section.project article ol, section.project article ol li, section.project article blockquote {
+  width: 80%;
+  margin: 0 auto;
+} */
+
 section.project blockquote {
   padding: 1rem 0;
   margin: 1rem 2rem 2rem 2rem;
@@ -274,6 +279,7 @@ section.project article p {
   padding: 1rem 0;
   color: #333333;
 }
+
 
 section.project section.image-block {
   margin: 2rem 0;
