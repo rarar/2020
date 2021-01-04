@@ -71,6 +71,36 @@ const mlaipatents = [
     url: "https://patents.google.com/patent/US20200006943A1/"
   },
   {
+    title: "Analyzing temporal classes in user feedback",
+    id: "US20200372516A1",
+    url: "https://patents.google.com/patent/US20200372516A1/"
+  },
+  {
+    title: "Automated Assignment of Tasks Based on User Profile Data for Improved Efficiency",
+    id: "US20200364646A1",
+    url: "https://patents.google.com/patent/US20200364646A1/"
+  },
+  {
+    title: "Minimizing Risk Using Machine Learning Techniques",
+    id: "US20200372397A1",
+    url: "https://patents.google.com/patent/US20200372397A1/"
+  },
+  {
+    title: "Optimized transportation selection",
+    id: "US20200372590A1",
+    url: "https://patents.google.com/patent/US20200372590A1/"
+  },
+  {
+    title: "Cognitive visual and ontological mapping of tabular data based on a distribution of a measure of interest",
+    id: "US20200192928A1",
+    url: "https://patents.google.com/patent/US20200192928A1/"
+  },
+  {
+    title: "Suggesting a destination folder for a file to be saved",
+    id: "US20200174967A1",
+    url: "https://patents.google.com/patent/US20200174967A1/"
+  },
+  {
     title: "Cognitive role-based policy assignment and user interface modification for mobile electronic devices",
     id: "US20200007411A1",
     url: "https://patents.google.com/patent/US20200007411A1/"
