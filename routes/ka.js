@@ -56,6 +56,13 @@ const kaexperiments = [
     url: "/ka/khantent-blocker",
     desc: "A self-inflicted design provocation to get learners into a growth mindset.",
     img: "/images/khantent-blocker-main.png"
+  },
+  {
+    name: "Transactional Education",
+    type: "Discursive Design",
+    url: "/ka/transactional-education",
+    desc: "What if the future of education reamains purely transacational?",
+    img: "/images/transactional-education-thumb.png"
   }
 ];
 
@@ -105,6 +112,17 @@ router.get('/khantent-blocker', function(req, res, next) {
   res.locals.concept = "<p>From popular journalism to scholarly academic research, the 'attention economy' has been used quite a bit lately to describe social media's interest in incentivizing our attention for the purposes of collecting data. Classrooms are no exception—many schools haven't blocked social media sites. Once the chromebooks come out, student attention spans quickly wander to the realms of Facebook, Youtube, etc. What if we deflected some of that social media usage into learning?</p><p>Khantent Blocker is a simple browser extension that helps set limits on social media usage. When time is up, the end user is served up a random course on Khan Academy. It not only serves a functional purpose by allowing the end user to ration their daily social media usage, but it also serves a discursive, provocative purpose by imagining if part of student agency was offloaded to a machine.</p><p>Available for <a href=\"https://chrome.google.com/webstore/detail/khantent-blocker/ijljmllaclicikpfbemaacgmpndliala?hl=en\">Chrome</a> and <a href=\"https://addons.mozilla.org/en-US/firefox/addon/khantent-blocker/\">Firefox</a></p>";
   res.locals.content = '';
   res.locals.title = 'Khantent Blocker - Raphael Arar';
+  res.render('art');
+});
+
+router.get('/transactional-education', function(req, res, next) {
+  res.locals.h1 = "Transactional Education";
+  res.locals.desc = "What if the future of education reamains purely transacational?";
+  res.locals.videothumb = '<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/501311046?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>';
+  res.locals.deets = "<h2>Users ❤️</h2><ul><li>Khan Academy internal organization</li><li>General public</li></ul><h2>Employer 🏢</h2><ul><li>Khan Academy</li></ul>";
+  res.locals.concept = '<p>In Paolo Freire’s <em>Pedagogy of the Oppressed</em>, a foundational text in critical pedagogy, he critiques the traditional education society in a number of ways. One of his claims is that traditional pedagogy can be considered the “banking model of education” because it’s transactional in nature and equates learners as piggy banks wherein teachers deposit bits of knowledge (or coins) in order to facilitate learning. He instead argued in favor of a pedagogical model that facilitated critical dialogue between teachers and students, breaking down power dynamics in effort to treat learners as co-creators of knowledge.</p><p>But what if education continued forward in a purely transactional way? What if we extended this metaphor into the future through a sociotechnical lens wherein all education is mediated through a computer interface and is purely transactional in nature? And what if we continued Freire’s notion of the “banking model of education” and designed it in a literal way?</p><p>This is a speculative design piece that envisions a future wherein all learners on Khan Academy experience learning as a rote ATM transaction. There’s no teacher involvement, no classroom collaboration, but rather a learner does an exercise and gets a literal receipt for their efforts through a simple receipt printer tied to their laptop.</p><p>I want to stress that that this piece is antithetical to the core values of Khan Academy—the organization\'s intent is to create an edtech platform that primarily helps facilitate human-to-human interaction as opposed to alienate learners. That said, this piece serves as a counterbalance to Khan Academy\'s efforts. Even though as designers we may believe a principle to be true, sometimes ideas can get the best of us. Speculative design of this sort can in effect serve as a lens and a point of reflection to compare against our roadmap and serve as a vehicle to critique our work. Are we moving toward or away from the dystopian vision presented in our designs? How will our evolving sociotechnical landscape pull us toward or away from this end state? Is this a vision that democratizes technology in service of leveling the playing field in technology?</p>';
+  res.locals.content = '';
+  res.locals.title = 'Transactional Education - Raphael Arar';
   res.render('art');
 });
 
