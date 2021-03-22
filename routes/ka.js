@@ -2,13 +2,18 @@ var express = require('express');
 var router = express.Router();
 
 const kameta = {
-  h1: 'Personalizing classroom learning',
-  desc: 'In my current role at Khan Academy, I’ve been focusing on the future of personalized education in the classroom. Here are a few case studies of shipped work and related links that dive in deeper.',
+  h1: 'Designing for classroom engagement and efficacy',
+  desc: 'At Khan Academy, I worked on products and experiences that enabled personalized education and drove greater engagement and efficacy of learning outcomes in the classroom. Here are a few case studies of shipped work and related links that dive in deeper.',
 };
 
 
 
 const kapresentations = [
+  {
+    title: "Dreams of justice through discursive design",
+    venue: "Interaction 2021",
+    url: "https://interaction21.ixda.org/program/talk--raphael-arar"
+  },
   {
     title: "5 things designers can learn from classrooms",
     venue: "Layers 2019",
@@ -17,6 +22,11 @@ const kapresentations = [
 ];
 
 const kapress = [
+  {
+    title: "\"Why Design?\" A Conversation Series",
+    source: "Modernist Studio Blog",
+    url: "https://moderniststudio.com/featured/future-of-education-why-design/"
+  },
   {
     title: "SF Design Week: Designing for classrooms and beyond",
     source: "Clever Blog",
