@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', {
     title: 'Raphael Arar',
-    tagline: 'designs to untangle complexity'
+    tagline: 'Interfaces & Systems'
   });
 });
 
