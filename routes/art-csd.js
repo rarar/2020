@@ -1,6 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
+router.get('/noema-ai-poet', function(req, res, next) {
+  res.locals.h1 = "Noema AI Poet";
+  res.locals.desc = "As an external and increasingly intelligent form of memory, AI can broaden the effects of writing systems on the physical borders of the human mind.";
+  res.locals.videothumb = '<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/539142520?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>';
+  res.locals.deets = "<h2>Medium</h2><ul><li>web application</li></ul><h2>Year</h2><ul><li>2020</li></ul><h2>Venues</h2><ul><li>Noema Magazine</li></ul>";
+  res.locals.concept = "<p>To accompany an essay on AI and writing machines, Noema Magazine commissioned me to create a piece of net art. This experience allowed anyone to ask a question to an AI system, and in turn it would generate a story. While the project is no longer active, it served as a small example of the potential for unique collaborations between humans and machines.</p><p><a href='https://www.noemamag.com/prosthetic-memories-writing-machines/'>Read the essay and view the archived project.</a></p>";
+  res.locals.goToIndex = true;
+  res.locals.title = 'Noema AI Poet - Raphael Arar';
+  res.render('art');
+});
+
+
+
 router.get('/fcfi', function(req, res, next) {
   res.locals.h1 = "Food Carbon Footprint Index";
   res.locals.desc = "Imagine a late-capitalist dystopian future in which individuals are held personally responsible for the climate crisis.";
