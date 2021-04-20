@@ -7,7 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var mlaiRouter = require('./routes/mlai');
 var kaRouter = require('./routes/ka');
-var artRouter = require('./routes/art');
+var artRouter = require('./routes/art-csd');
 var ethicsRouter = require('./routes/ai-ethics');
 var convoRouter = require('./routes/conversation');
 
@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/ml-ai', mlaiRouter);
 app.use('/ka', kaRouter);
-app.use('/art', artRouter);
+app.use('/art-csd', artRouter);
 app.use('/ai-ethics', ethicsRouter);
 app.use('/conversation', convoRouter);
 

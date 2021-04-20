@@ -1,7 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+router.get('/fcfi', function(req, res, next) {
+  res.locals.h1 = "Food Carbon Footprint Index";
+  res.locals.desc = "Imagine a late-capitalist dystopian future in which individuals are held personally responsible for the climate crisis.";
+  res.locals.largethumb = "/images/fcfi-main.jpg";
+  res.locals.deets = "<h2>Medium</h2><ul><li>web application</li></ul><h2>Year</h2><ul><li>2020</li></ul><h2>Venues</h2><ul><li>Emerge Festival, Arizona State University - Mesa, Arizona</li><li>Participatory Design Conference (PDC), Situated Actions - Manizales, Colombia</li></ul>";
+  res.locals.concept = "<p>Imagine a late-capitalist dystopian future in which individuals are held personally responsible for the climate crisis. Imagine a future where ubiquitous surveillance of individuals becomes the preferred method for curbing carbon emissions, where non-compliance results in serious penalties. The Food Carbon Footprint Index (FCFI) imagines just that vision of the future. FCFI invites participants to make meal decisions via a web application. The app will calculate each meal’s carbon footprint and index this \“score\” against other participants. Scores will be broadcasted at Emerge 2020 for public scrutiny and collective shaming and musing.</p><p>The Food Carbon Footprint Index (FCFI) invites participants to engage in a social experiment wherein their food choices are monitored and indexed based on their daily carbon footprint. Participants will receive a daily allotment of 100 CO2 points, and will be asked to log their meal choices via a web application. Meals with a higher carbon footprint will require more CO2 points, while carbon-friendly meals will require far fewer. Participants will be graded based on their food choices, and their rank will be displayed on a leaderboard projected at Emerge 2020. Those who exceed their daily carbon allotment will be \“fined\” and subject to public shame.</p><p>FCFI seeks to complicate our relationship with the \“power of individual choice\” in the face of a looming global environmental devastation. When capitalism requires that the individual bear the burden of responsibility in making smart, moral decisions with the low-burning hope of a share in prosperity, who benefits and who loses? Do these efforts actually encourage self-development for the collective good, or is there another way? Should each of us individually bear the brunt of environmental responsibility? With the future of our species hanging in the balance, what is the best way forward?</p><p><a href='https://fcfi.rarar.com'>Participate in the social experiment</a></p><p><a href='http://festivaldelaimagen.com/wp-content/uploads/2020/07/MEMORIAS_VOL3.pdf'>Read the paper in the PDC proceedings</a></p>";
+  res.locals.content = '<section class="jumbo"><div class="img-container full"><img src="/images/fcfi-leaderboard.jpg" /></div><div class="detail"><p>Leaderboard displayed publicly on a global dashboard</p></div></section><section class="jumbo"><div class="img-container full"><img src="/images/fcfi-main.jpg" /></div><div class="detail"><p>Individual web app to input dietary choices</p></div></section>';
+  res.locals.goToIndex = true;
+  res.locals.title = 'Food Carbon Footprint Index (FCFI) - Raphael Arar';
+  res.render('art');
+});
+
+
 router.get('/motor-studies', function(req, res, next) {
   res.locals.h1 = "Motor Studies";
   res.locals.desc = "The attention economy drives much of the Western world. This set of minimal sculptures, each with its own simple gesture from one or more motors, is an effort to metaphorize this digital space in the physical world.";
