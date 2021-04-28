@@ -3,7 +3,7 @@ var router = express.Router();
 
 const conversationmeta = {
   h1: 'Codifying the discipline of Conversational UX',
-  desc: 'At IBM Research, I partnered with a Sociologist to establish a set of guidelines and prototypes for how to work with conversational agents.',
+  desc: 'At IBM Research, I partnered with a sociologist to establish a set of guidelines and prototypes for how to work with conversational agents.',
 };
 
 
