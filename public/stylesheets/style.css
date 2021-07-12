@@ -348,7 +348,7 @@ section.landing aside {
   box-shadow: 1px 0px 0px #E0E0E0;
   height: 100vh;
   position: relative;
-  overflow: hidden !important;
+  overflow: auto;
 }
 
 section.landing aside h1 {
@@ -380,18 +380,17 @@ section.landing aside p {
 }
 
 section.landing aside ul.social, section.landing aside ul.personal {
-  margin: 0;
+  margin: 0 0 0.5rem 2rem;
   padding: 0;
-  position: absolute;
   bottom: 2rem;
 }
 
 section.landing aside ul.social {
-  left: 2rem;
+  /* left: 2rem; */
 }
 
 section.landing aside ul.personal {
-  right: 2rem;
+  /* right: 2rem; */
 }
 
 section.landing aside ul.social li, section.landing aside ul.personal li {
@@ -603,7 +602,7 @@ section.landing main footer p {
   section.landing aside ul.social, section.landing aside ul.personal {
     position: static;
     display: inline-block;
-    padding: 0 0 2rem 2rem;
+    padding: 0 0 2rem 0rem;
   }
 
   section.landing main {

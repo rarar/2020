@@ -64,14 +64,14 @@ const kaexperiments = [
     name: "Khantent Blocker",
     type: "Discursive Design",
     url: "/ka/khantent-blocker",
-    desc: "A self-inflicted design provocation to get learners into a growth mindset.",
+    desc: "A self-inflicted design provocation to get learners into a growth mindset. What if we deflect social media usage toward more wholesome outlets?",
     img: "/images/khantent-blocker-main.png"
   },
   {
     name: "Transactional Education",
     type: "Discursive Design",
     url: "/ka/transactional-education",
-    desc: "What if the future of education reamains purely transacational?",
+    desc: "What if the future of education reamains purely transacational? If technology can facilitate easier access to high-quality education, what type of educational experiences become desirable?",
     img: "/images/transactional-education-thumb.png"
   }
 ];
@@ -139,8 +139,8 @@ router.get('/transactional-education', function(req, res, next) {
 router.get('/', function(req, res, next) {
   res.locals.press = kapress;
   res.locals.presentations = kapresentations;
-  res.locals.patents = "";
-  res.locals.publications = "";
+  // res.locals.patents = "";
+  // res.locals.publications = "";
   res.locals.experiments = kaexperiments;
   res.locals.projects = kaprojects;
   res.locals.meta = kameta;
