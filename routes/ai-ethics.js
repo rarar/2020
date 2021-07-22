@@ -3,7 +3,7 @@ var router = express.Router();
 
 const ethicsmeta = {
   h1: 'Helping AI Scientists create systems ethically',
-  desc: 'While at IBM Research, I worked with ethnographers and AI scientists to untangle various AI services in effort to expose their inner workings and develop guidelines around how to both build and utilize them ethically.',
+  desc: 'While at IBM Research, I began working with ethnographers and AI scientists to untangle various AI services in effort to expose their inner workings and develop guidelines around how to both build and utilize them ethically. Since moving on, my inquiries in this space have continued.',
 };
 
 
@@ -51,6 +51,13 @@ const ethicsexperiments = [
     img: "/images/nostalgia-main.png"
   },
   {
+    name: "Vibes",
+    type: "Art Research",
+    url: "/ai-ethics/vibes",
+    desc: "What's the overall vibe of your browsing activity? A commentary on both doomscrolling culture as well as the advancements and perceived accuracy of emerging developments in affective computing.",
+    img: "/images/vibes-main.png"
+  },
+  {
     name: "Fail Engine",
     type: "Art Research",
     url: "/ai-ethics/fail-engine",
@@ -92,6 +99,17 @@ router.get('/fail-engine', function(req, res, next) {
   res.locals.concept = "<p>Fail Engine is an aesthetic experiment that explores the intersection of emotion and artificial intelligence, particularly the complicated feeling of <a href=\"https://en.wikipedia.org/wiki/Schadenfreude\">schadenfreude</a>. By watching videos of potentially hilarious human foibles, can we teach a computational system to understand how to laugh at our misfortune?</p><p>Human nature is sometimes inexplicable. Why do we have a tendency to laugh at someone else’s misfortune? Maybe it’s better explained through the Nietzsche saying \“To see others suffer does one good\” (Nietzsche, F. W., Kaufmann, W. A., & Hollingdale, R. J., 1989). When push comes to shove, we’re wired to avoid what we fear and seek what gives us pleasure (Aschwanden C. 2018). That said, this feeling seems to be highly individualized and inconsistent. When juxtaposed with the precision of computation being applied to emotion detection and sentiment analysis, the following questions may ensue: can schadenfreude be taught to a computer? Are there situations where its understanding can provide us value? Or will its understanding be misused in malicious ways?</p><p>Fail Engine is a poetic thought-experiment-turned-installation that explores the confusing nature of schadenfreude and serves as an effort to draw attention to the complexity of machine intelligence in an era when we may have barely scratched the surface of the human psyche. Through artificial intelligence services that involve affective computing, an online experience invites participants to watch popular fail videos and gifs. In the process, a real-time facial emotion detection service monitors facial expressions to determine specific points of cringe-worthy humor. These reactions serve as training data for a computational system that attempts to learn when and where schadenfreude occurs.</p><p>Participants can contribute their reactions to fail videos via a web application. Once access to the web cam is granted, the system will monitor facial expressions that simultaneously occur with video playback. The underlying data containing real-time emotional responses (without images of participants) fuels a computational system that attempts to learn when and where to laugh at these videos based on crowdsourced reactions. Then, in a video installation setting, a playlist of trained fail videos screens back to participants along with the computer’s reaction, completing the training loop.</p>";
   res.locals.content = '<section class="jumbo"><div class="video-wrapper full"><div style="padding:82.82% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/337194153?loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div><div class="detail"><p>Video documentation of the participatory experience of the installation</p></div></section><section class="jumbo"><div class="video-wrapper full"><div style="padding:73.17% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/341078918?loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div><div class="detail"><p>Video documentation of the gallery experience of the installation</p></div></section><section class="references"><h3>References</h3><ul><li>Nietzsche, F. W., Kaufmann, W. A., & Hollingdale, R. J. (1989). On the genealogy of morals / Ecce homo. New York: Vintage.</li><li>Aschwanden, C. (2018, October 19). \'The Joy of Pain,\' and What We Get Out of It. Retrieved from <a href="https://www.nytimes.com/2013/12/24/science/the-joy-of-pain-and-what-we-get-out-of-it.html">https://www.nytimes.com/2013/12/24/science/the-joy-of-pain-and-what-we-get-out-of-it.html</a></li></ul></section>';
   res.locals.title = 'Fail Engine - Raphael Arar';
+  res.render('art');
+});
+
+router.get('/vibes', function(req, res, next) {
+  res.locals.h1 = "Vibes";
+  res.locals.desc = "What's the overall vibe of your browsing activity? A commentary on both doomscrolling culture as well as the advancements and perceived accuracy of emerging developments in affective computing.";
+  res.locals.largethumb = "/images/vibes-main.png";
+  res.locals.deets = "<h2>Medium️</h2><ul><li>net art</li></ul><h2>Year</h2><ul><li>2021—Present</li></ul>";
+  res.locals.concept = "<p>Vibes serves as a commentary on both doomscrolling culture as well as the advancements and perceived accuracy of emerging developments in affective computing. What's the overall vibe of your browsing activity? Is your online activity bumming you out or brightening your mood?</p><p>Vibes is a browser extension that will run in the background in your browser and analyze the content of the pages you access. It serves as a passive intervention for you to take control of your online access by computing a sentiment score over time. By raising awareness to the overall mood of your activity, it shifts the onus on you as an individual to determine whether or not to alter browsing habits based on the data it collects. Its output is limited to the accuracy of the latest iterations of sentiment analysis libraries, and as a result may feel both accurate and at other times may feel off. The intent is to not only serve as a passive intervention but also to raise awareness and serve as a catalyst for you to question the limits of artificial intelligence.</p><p><a href=''>Install Vibes for Google Chrome</a></p>";
+  res.locals.content = '<section class="jumbo"><div class="video-wrapper"><div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/542160863?loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div><div class="detail"><p>Vibes in action</p></div></section>';
+  res.locals.title = 'Vibes - Raphael Arar';
   res.render('art');
 });
 
