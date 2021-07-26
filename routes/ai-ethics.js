@@ -62,7 +62,7 @@ const ethicsexperiments = [
 
 
 router.get('/', function(req, res, next) {
-  res.locals.press = ethicspress;
+  res.locals.press = "";
   res.locals.presentations = ethicspresentations;
   res.locals.patents = "";
   res.locals.publications = ethicspublications;
