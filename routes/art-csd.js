@@ -1,6 +1,17 @@
 var express = require('express');
 var router = express.Router();
 
+router.get('/doomscroll', function(req, res, next) {
+  res.locals.h1 = "Doomscroll";
+  res.locals.desc = "A pavilion for the wrong biennale no5 that leans into the medium we can't seem pull away from.";
+  res.locals.videothumb = '<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/646020708?h=1ed5813c29" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>';
+  res.locals.deets = "<h2>Medium</h2><ul><li>net art</li></ul><h2>Year</h2><ul><li>2021</li></ul><h2>Venue</h2><ul><li>the wrong biennale no5</li></ul>";
+  res.locals.concept = "<p>More than ever before, we are drawn to our devices and the promise they hold: An endless river of content, hope, anxieties simultaneously unimaginable and predictable. We pull on our screens, reaching for the limits of the y-axis. What do we hope to find?</p><p>'Doomscrolling' has entered our vernacular as both warning and black comedy, suggesting we simply refuse to stop an impulse that we know will ultimately hurt us once we've fetched enough digital content. It's in that tension that the works of video, performance, and net art featured in this exhibition draw their power. Ranging in tone from playful to uncanny, these artists remind us of everything the internet can be and whatever it has become.</p><p>Co-curated with <a href=\"http://simonboas.com\">Simon Boas</a> for <a href=\"http://leonardo.info\">Leonardo/ISAST</a> as part of the wrong biennale no. 5.</p><p><a href=\"http://thewrong.leonardo.info\">View the pavilion</a></p>";
+  res.locals.goToIndex = true;
+  res.locals.title = 'DOOMSCROLL - Raphael Arar';
+  res.render('art');
+});
+
 router.get('/osc-osc', function(req, res, next) {
   res.locals.h1 = "Oscillating Oscillators";
   res.locals.desc = "A temporal sound sculpture exploring notions of feedback.";

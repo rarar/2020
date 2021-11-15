@@ -391,6 +391,7 @@ section.landing aside ul.social {
 
 section.landing aside ul.personal {
   /* right: 2rem; */
+  padding-bottom: 24px;
 }
 
 section.landing aside ul.social li, section.landing aside ul.personal li {
