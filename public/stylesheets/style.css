@@ -98,9 +98,6 @@ section.area main ul.projects li img {
   margin: 0 8rem 0 0;
 }
 
-section.area main ul.projects li div {
-  /* width: 50%; */
-}
 
 section.area main ul.projects li div h3 {
   font-size: 3rem;
@@ -122,7 +119,6 @@ section.area main ul.projects li div p {
 section.area main ul.links li {
   margin: 0;
   padding: 2rem 0;
-  /* box-shadow: 0px 1px 0px #E0E0E0; */
   list-style-type: none;
 }
 
@@ -188,10 +184,6 @@ section.jumbo img {
   align-self: flex-start;
 }
 
-/* section.project article p, section.project article h3, section.project article h4, section.project article ul, section.project article ul li, section.project article ol, section.project article ol li, section.project article blockquote {
-  width: 80%;
-  margin: 0 auto;
-} */
 
 section.project blockquote {
   padding: 1rem 0;
@@ -385,18 +377,18 @@ section.landing aside p {
   margin: 2rem;
 }
 
+section.landing aside p#long-text {
+  display: none;
+}
+
 section.landing aside ul.social, section.landing aside ul.personal {
   margin: 0 0 0.5rem 2rem;
   padding: 0;
   bottom: 2rem;
 }
 
-section.landing aside ul.social {
-  /* left: 2rem; */
-}
 
 section.landing aside ul.personal {
-  /* right: 2rem; */
   padding-bottom: 24px;
 }
 
