@@ -1,7 +1,7 @@
 body {
   font: 1rem franklin-gothic-urw, sans-serif;
   /*font-family: franklin-gothic-urw,sans-serif;*/
-  color: #4F4F4F;
+  color: #333333;
 }
 
 h1, h3 {
@@ -54,9 +54,11 @@ section.area header, section.project header {
 section.area header h1, section.project header h1 {
   font-weight: 400;
   font-size: 4rem;
+  max-width: calc(70% - 6rem);
 }
 
 section.area header p, section.project header p {
+  max-width: calc(70% - 6rem);
   font-size: 1.3125rem;
   line-height: 1.875rem;
   padding: 0;
@@ -217,7 +219,8 @@ section.jumbo div, section.project blockquote {
 
 section.jumbo div.detail p {
   color: #4F4F4F;
-  font-size: 0.875rem;
+  line-height: 150%;
+  max-width: none;
 }
 
 section.jumbo div.img-container{
@@ -268,6 +271,7 @@ section.jumbo ul li {
   list-style-type: none;
   padding: 0 0 0.5rem 0;
   color: #333333;
+  line-height: 150%;
 }
 
 section.project article h3 {
@@ -277,9 +281,9 @@ section.project article h3 {
 }
 
 section.project article p {
-  margin: 0 auto;
   padding: 1rem 0;
   color: #333333;
+  max-width: calc(70% - 6rem);
 }
 
 
@@ -310,6 +314,8 @@ section.project section.image-block figure figcaption {
 
 section.project .inner-content {
   margin: 0;
+  max-width: calc(70% - 6rem);
+  line-height: 150%;
 }
 
 section.project .inner-content li {
@@ -466,6 +472,7 @@ section.landing main footer p {
 }
 
 @media (max-width: 1280px) {
+
   section.landing aside {
     width: 40%
   }
@@ -506,6 +513,11 @@ section.landing main footer p {
 }
 
 @media (max-width: 1024px) {
+  section.area header h1, section.project header h1, section.area header p, section.project header p {
+    width: auto;
+    max-width: none;
+  }
+
   section.area main ul.projects a {
     flex-direction: column;
   }
@@ -565,10 +577,13 @@ section.landing main footer p {
     padding: 0;
   }
 
-  section.jumbo div h2, section.jumbo div ul {
-    font-size: 0.875rem;
+  section.jumbo div h2 {
     padding: 0;
-    margin: 0.5rem 0;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  section.jumbo div ul {
+    margin: 0.5rem 0 0.5rem 0;
   }
 
   section.jumbo div.detail {
@@ -578,17 +593,22 @@ section.landing main footer p {
     padding: 0 0 0 2rem;
   }
 
-  section.jumbo div.detail p {
-    padding: 0.5rem 0;
+  section.jumbo div.detail {
+    padding: 0.5rem 0 0.5rem 2rem;
   }
 
   section.project section.image-block {
     flex-direction: column;
     padding: 0.5rem;
   }
+
+  section.project article p {
+    max-width: none;
+  }
 }
 
 @media (max-width: 768px) {
+
   section.landing {
     flex-direction: column;
   }
@@ -630,6 +650,11 @@ section.landing main footer p {
 
   a.back {
     left: 2rem;
+  }
+
+
+  section.project .inner-content {
+    max-width: none;
   }
 
   section.area header h1, section.project header h1 {
