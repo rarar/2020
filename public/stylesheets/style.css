@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'Kern';
+  src: url('../fonts/Kern-Regular.woff2') format('woff2');
+}
+
 body {
-  font: 1rem franklin-gothic-urw, sans-serif;
+  font: 1rem 'Kern', sans-serif;
   /*font-family: franklin-gothic-urw,sans-serif;*/
   color: #333333;
 }
