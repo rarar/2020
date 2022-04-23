@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  script.
+    let locations = [
+      "https://en.wikipedia.org/wiki/Social_economy",
+      "https://en.wikipedia.org/wiki/Time-based_currency",
+      "https://en.wikipedia.org/wiki/Community_building",
+      "https://en.wikipedia.org/wiki/Barter",
+      "https://en.wikipedia.org/wiki/Gift",
+      "https://en.wikipedia.org/wiki/Commons",
+      "https://en.wikipedia.org/wiki/Rationing",
+      "https://en.wikipedia.org/wiki/Truthful_resource_allocation",
+      "https://en.wikipedia.org/wiki/Resource-based_economy",
+      "https://en.wikipedia.org/wiki/Technocracy",
+      "https://en.wikipedia.org/wiki/Mutualism_(economic_theory)",
+      "https://en.wikipedia.org/wiki/Labour_voucher",
+      "https://en.wikipedia.org/wiki/Altruism",
+      "https://en.wikipedia.org/wiki/Gift_economy",
+      "https://en.wikipedia.org/wiki/Subsistence_economy",
+      "https://en.wikipedia.org/wiki/Calculation_in_kind",
+      "https://en.wikipedia.org/wiki/Natural_economy",
+      "https://en.wikipedia.org/wiki/Eco-socialism"
+    ];
+    window.location.replace(locations[Math.floor(Math.random() * locations.length)]);
+  section
+    header
+      h1= h1
+      p= desc
+      
