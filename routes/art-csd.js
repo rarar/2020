@@ -7,6 +7,18 @@ router.get('/ymingh-redirect', function(req, res, next) {
   res.render('redirect');
 });
 
+router.get('/dm-meme', function(req, res, next) {
+  res.locals.h1 = "DM MEME / ДМ МЕМ";
+  res.locals.desc = "-.. -- / -- . -- .";
+  res.locals.largethumb = "/images/dm-meme-thumb.png";
+  res.locals.deets = "<h2>Medium</h2><ul><li>acrylic, thermal printer, electronics, software</li></ul><h2>Year</h2><ul><li>2022</li></ul><h2>Venue</h2><ul><li>Moscow Museum of Applied Art</li></ul>";
+  res.locals.concept = "<p>Memory is encoded with semantics, moving images, pattern recognition—all of which carry deep cultural implications.</p><p>Our contemporary social communication slips into private prompts, direct messages (dm)s, shared memes, and search/discovery through hashtags. This common form has evolved from the 1960s landline and instead lives on through the screens of our mobile devices.</p><p><em>DM MEME</em> is a work inspired by the original Moscow - DC hotline established in 1963 where both critical and cultural communications were relayed between the two superpowers. Popularly referred to as the  \“red telephone\”, this hotline has served as a cultural signifier of the exchange between the Soviet Union/Russia and the United States.</p><p>Through <em>DM MEME</em>, we invite participants to engage in a real-time morphing of the contextual and semantic meanings imbued in image-based memes. The definition, description, or response to a meme in one’s native tongue will serve as the starting point to a transcontinental collaboration with another participant. Once two participants respond to the same message, likely in different languages, a pseudo-collaborative poetic and encoded response will be generated that repositions the meaning of the meme at hand. This 3-way collaboration between two participants and a computational system seeks to connect the global and local through questioning the cultural transmission of memes and how their meaning evolves, morphs, and transforms through the digital ether.</p>";
+  res.locals.content = '<section class="jumbo"><div class="img-container"><img src="/images/dm-meme-process.png" /></div><div class="detail"><p>Flow diagram for the installation</p></div></section><p>The interaction model is as follows:<ol class="inner-content"><li>Take out your phone and scan the QR Code</li><li>Respond to the image in English or Russian</li><li>Await for a printed response—once a transcontinental match is made the printer will create a new response</li><li>If you’re in the physical site of the printer, and there is a match to your response then you will receive a print out of the artifact. Tear off the latest message from the printer and either pin it to the wall or take it home as a souvenir.</li></ol></p><section class="jumbo"><div class="img-container"><img src="/images/dm-meme-ui.png" /></div><div class="detail"><p>Web UI for the installation</p></div></section><p>Collaboration with Danielle Siembieda</p>';
+  res.locals.goToIndex = true;
+  res.locals.title = 'DM MEME / ДМ МЕМ" - Raphael Arar';
+  res.render('art');
+});
+
 router.get('/doomscroll', function(req, res, next) {
   res.locals.h1 = "Doomscroll";
   res.locals.desc = "A pavilion for the wrong biennale no5 that leans into the medium we can't seem pull away from.";
