@@ -259,12 +259,12 @@ section.project section.jumbo h2 {
   color: #828282;
 }
 
-section.jumbo ul {
+section.jumbo ul, section.jumbo ol {
   margin: 0 0 2rem 0;
   padding: 0;
 }
 
-section.jumbo ul li {
+section.jumbo ul li, section.jumbo ol li {
   list-style-type: none;
   padding: 0 0 0.5rem 0;
   color: #333333;
@@ -324,12 +324,12 @@ section.project h4 {
   font-size: 1.75rem;
   margin: 1.5rem 0 1rem 0;
 }
-section.references ul {
+section.references ul, section.references ol {
   margin: 0;
   padding: 0;
 }
 
-section.references ul li {
+section.references ul li, section.references ol li {
   list-style: none;
   padding: 1rem 0;
 }
