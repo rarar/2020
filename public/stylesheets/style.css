@@ -262,6 +262,7 @@ section.project section.jumbo h2 {
 section.jumbo ul, section.jumbo ol {
   margin: 0 0 2rem 0;
   padding: 0;
+  line-height: 1.5rem;
 }
 
 section.jumbo ul li, section.jumbo ol li {
@@ -269,6 +270,7 @@ section.jumbo ul li, section.jumbo ol li {
   padding: 0 0 0.5rem 0;
   color: #333333;
   line-height: 150%;
+  line-height: 1.5rem;
 }
 
 section.project article h3 {
@@ -327,6 +329,8 @@ section.project h4 {
 section.references ul, section.references ol {
   margin: 0;
   padding: 0;
+  line-height: 1.5rem;
+  max-width: calc(70% - 6rem);
 }
 
 section.references ul li, section.references ol li {
@@ -599,7 +603,7 @@ section.landing main footer p {
     padding: 0.5rem;
   }
 
-  section.project article p {
+  section.project article p, section.references ol {
     max-width: none;
   }
 }
@@ -650,7 +654,7 @@ section.landing main footer p {
   }
 
 
-  section.project .inner-content {
+  section.project .inner-content, section.references ol {
     max-width: none;
   }
 
