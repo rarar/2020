@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 const kameta = {
-  h1: 'Designing for classroom engagement and efficacy',
+  h1: 'Designing for learning engagement and efficacy',
   desc: 'At Khan Academy, I worked on products and experiences that enabled personalized education and drove greater engagement and efficacy of learning outcomes in the classroom. Here are a few case studies of shipped work and related links that dive in deeper.',
 };
 
